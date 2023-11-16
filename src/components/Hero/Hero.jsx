@@ -9,7 +9,7 @@ import Calories from "../../assets/calories.png";
 const Hero = () => {
   return (
     <section className="hero">
-        {/* LEFT SIDE */}
+      {/* LEFT SIDE */}
       <div className="left-h">
         <Header />
         {/* THE BEST AD */}
@@ -52,8 +52,8 @@ const Hero = () => {
 
         {/* HERO BUTTONS */}
         <div className="hero-buttons">
-            <div className="buttons btn">Get Started</div>
-            <div className="buttons btn">Learn More</div>
+          <div className="buttons btn">Get Started</div>
+          <div className="buttons btn">Learn More</div>
         </div>
       </div>
 
@@ -62,20 +62,21 @@ const Hero = () => {
         <button className="btn">Join Now</button>
 
         <div className="heart-rate">
-            <img src={Heart} alt="" />
-            <span>Heart Rate</span><span>116 bpm</span>
+          <img src={Heart} alt="" />
+          <span>Heart Rate</span>
+          <span>116 bpm</span>
         </div>
 
         {/* HERO IMAGES */}
-            <img src={hero_image} alt="" className="hero-image" />
-            <img src={hero_image_back} alt="" className="hero-image-back" />
+        <img src={hero_image} alt="" className="hero-image" />
+        <img src={hero_image_back} alt="" className="hero-image-back" />
         {/* CALORIES */}
         <div className="calories">
-            <img src={Calories} alt="" />
-            <div>
-                <span>Calories Burned</span>
-                <span>220 kcal</span>
-            </div>
+          <img src={Calories} alt="" />
+          <div>
+            <span>Calories Burned</span>
+            <span>220 kcal</span>
+          </div>
         </div>
       </div>
     </section>
