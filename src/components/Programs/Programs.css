@@ -9,7 +9,7 @@
     display: flex;
     gap: 5rem;
     font-weight: bold;
-    font-style: 3rem;
+    font-size: 3rem;
     justify-content: center;
     color: white;
     text-transform: uppercase;
@@ -22,6 +22,7 @@
 }
 
 .category{
+    display: flex;
     flex-direction: column;
     background-color: gray;
     padding: 2rem;
