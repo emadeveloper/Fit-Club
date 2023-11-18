@@ -10,6 +10,7 @@ const Hero = () => {
   return (
     <section className="hero">
       {/* LEFT SIDE */}
+      <div className="blur hero-blur"></div>
       <div className="left-h">
         <Header />
         {/* THE BEST AD */}
