@@ -86,4 +86,14 @@
     color: orange;
 }
 
+/* RESPONSIVE STYLES */
+
+@media screen and (max-width: 768px){
+    .plans{
+        flex-direction: column;
+    }
+    .plans>:nth-child(2){
+        transform: none;
+    }
+}
 

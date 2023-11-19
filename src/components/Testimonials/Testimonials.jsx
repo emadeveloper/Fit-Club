@@ -12,7 +12,7 @@ const Testimonials = () => {
   const transition = { type: "spring", duration: 3 };
 
   return (
-    <section className="Testimonials">
+    <section className="testimonials">
       {/* LEFT SIDE */}
       <div className="left-t">
         <span>Testimonials</span>
