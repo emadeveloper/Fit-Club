@@ -3,7 +3,7 @@ import "./Header.css";
 import Logo from "../../assets/logo.png";
 import Bars from "../../assets/bars.png";
 import { useState } from "react";
-/* import {Link} from 'react-router-dom' */
+import { Link } from "react-scroll";
 
 const Header = () => {
   const mobile = window.innerWidth <= 768 ? true : false;
@@ -16,7 +16,7 @@ const Header = () => {
       {menuOpened === false && mobile === true ? (
         <div
           style={{
-            backgroundColor: "var(--appColor",
+            backgroundColor: "var(--appColor)",
             padding: "0.5rem",
             borderRadius: "5px",
           }}
@@ -30,13 +30,58 @@ const Header = () => {
         </div>
       ) : (
         <ul className="header-menu">
-          <li onClick={()=>setMenuOpened(false)}>Home</li>
+          <li>
+            <Link
+              onClick={() => setMenuOpened(false)}
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+            >
+              Home
+            </Link>
+          </li>
 
-
-          <li onClick={()=>setMenuOpened(false)}>Programs</li>
-          <li onClick={()=>setMenuOpened(false)}>Why Us</li>
-          <li onClick={()=>setMenuOpened(false)}>Plans</li>
-          <li onClick={()=>setMenuOpened(false)}>Testimonials</li>
+          <li>
+            <Link
+              onClick={() => setMenuOpened(false)}
+              to="programs"
+              spy={true}
+              smooth={true}
+            >
+              Programs
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => setMenuOpened(false)}
+              to="reasons"
+              spy={true}
+              smooth={true}
+            >
+              Why Us
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => setMenuOpened(false)}
+              to="plans"
+              spy={true}
+              smooth={true}
+            >
+              Plans
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => setMenuOpened(false)}
+              to="testimonials"
+              spy={true}
+              smooth={true}
+            >
+              Testimonials
+            </Link>
+          </li>
         </ul>
       )}
     </section>
