@@ -77,7 +77,7 @@
 
 .figures>div>span:nth-of-type(1){
     color: white;
-    font-style: 2rem;
+    font-size: 2rem;
 }
 
 .figures>div>span:nth-of-type(2){
@@ -120,6 +120,7 @@
     background-color: var(--darkGrey);
     width: fit-content;
     padding: 1rem;
+    align-items: start;
     flex: start;
     border-radius: 5px;
     position: absolute;
@@ -167,12 +168,12 @@
     padding: 1rem;
     width: fit-content;
     position: absolute;
-    top: 34rem;
+    top: 35rem;
     right: 28rem;
 }
 
-.calories >img{
-    width: 3rem;
+.calories > img{
+    width: 3;
 }
 
 .calories > div {
