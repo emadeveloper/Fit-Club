@@ -120,7 +120,6 @@
     background-color: var(--darkGrey);
     width: fit-content;
     padding: 1rem;
-    align-items: start;
     flex: start;
     border-radius: 5px;
     position: absolute;
